@@ -2,5 +2,5 @@ FROM conda/miniconda3:latest
 
 COPY . /nlptraining
 CMD conda create -n nlptraining -f /nlptraining/environment
-RUN conda activate nlptraining
-ENTRYPOINT [ "/bin/bash" ]
+SHELL ["conda", "run", "-n", "nlptraining", "/bin/bash", "-c"]
+# ENTRYPOINT [ "/bin/bash" ]
