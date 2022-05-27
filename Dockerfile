@@ -1,6 +1,7 @@
 FROM conda/miniconda3:latest
 
 COPY . /nlptraining
-CMD conda env create -n nlptraining -f /nlptrainig/environment.yml
+RUN conda update --all
+RUN conda env create -n nlptraining -f /nlptraining/env.yml
 SHELL ["conda", "run", "-n", "nlptraining", "/bin/bash", "-c"]
 # ENTRYPOINT [ "/bin/bash" ]
