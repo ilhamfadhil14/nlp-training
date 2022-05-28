@@ -14,4 +14,4 @@ This repo is for NLP Training with following topics:
 - Day 5
   - Machine Learning in NLP
   - Training & Evaluation
-  - Use case    
+  - Use case
