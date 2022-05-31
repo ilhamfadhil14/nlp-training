@@ -16,3 +16,5 @@ tqdm==4.64.0
 twint==2.1.20
 Scrapy
 tweepy==1.7.1
+sastrawi
+tweet-preprocessor
